@@ -41,14 +41,10 @@
 -->
 </body>
 <script>
-    function litres(time) {
-        var truncTime =Math.trunc(time)
-        var vater = truncTime/2
-
-        return Math.trunc(vater);
+    function positiveSum(arr) {
+        return (arr) => arr.reduce((sum, n) => n > 0 ? sum + n : sum, 0);
     }
-
-    console.log(litres(7))
+    console.log(positiveSum([2,4,7,-5]))
 
 </script>
 </html>
