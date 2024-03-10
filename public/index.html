@@ -41,8 +41,16 @@
 -->
 </body>
 <script>
-    const solution = str => str.split('').reverse().join('');
-
+    function getCount(str) {
+        var count = 0;
+        console.log(str.split(''))
+        str.split('').map(char => {
+            if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+                count++;
+            }
+        })
+        return count;
+    }
     console.log(revers("rew"))
 </script>
 </html>
