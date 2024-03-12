@@ -41,14 +41,10 @@
 -->
 </body>
 <script>
-    const add = (a,b)=> a + b
-    const divide = (a,b)=> a / b
-    const multiply = (a,b)=> a * b
-    const mod =(a,b)=> a%b
-    const exponent=(a,b)=>a ** b
+    function disemvowel(str) {
+        const vowels = ['a', 'e', 'i', 'o', 'u'];
+        return str.split('').filter((letter) => (!vowels.includes(letter.toLowerCase()))).join('');}
 
-    function subt(a,b){
-        return a - b
-    }
+    console.log(disemvowel("This website is for losers LOL!"))
 </script>
 </html>
