@@ -41,15 +41,14 @@
 -->
 </body>
 <script>
-    function removeChar(str){
-        if(str.length > 2){
-            return str.split('').filter((char,index)=>index!==0 && index !== str.length-1).join("")
-        }
-        return str
-    };
-
-    //or
-    const removeChar = str => str.slice(1,-1)
-    console.log(removeChar("qv"))
+    function squareDigits(num){
+       return  parseInt(num.toString().split('').map(symbol =>  parseInt(symbol)**2).join(''));
+    }
+    //Best
+    function squareDigit(num){
+        return +num.toString().split('').map(i =>  i*i).join('');
+    }
+    console.log( squareDigits(34))
+    console.log( squareDigit(34))
 </script>
 </html>
