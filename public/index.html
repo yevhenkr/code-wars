@@ -41,14 +41,18 @@
 -->
 </body>
 <script>
-    function squareDigits(num){
-       return  parseInt(num.toString().split('').map(symbol =>  parseInt(symbol)**2).join(''));
+    function repeatStr (n, s) {
+        let result =''
+        for (let i = 0; i < n; i++) {
+
+            result = result + s;
+            console.log(result)
+        }
+        return result;
     }
     //Best
-    function squareDigit(num){
-        return +num.toString().split('').map(i =>  i*i).join('');
-    }
-    console.log( squareDigits(34))
-    console.log( squareDigit(34))
+    repeatStr(3, "*")
+
+
 </script>
 </html>
