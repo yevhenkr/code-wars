@@ -41,11 +41,22 @@
 -->
 </body>
 <script>
-    function countSheeps(sheep) {
-        return arrayOfSheeps.filter(Boolean).length;
-        return sheep.filter(char => char === true).length
+    function basicOp(operation, value1, value2) {
+        switch (operation) {
+            case '+':
+                return value1 + value2;
+            case '-':
+                return value1 - value2;
+            case '*':
+                return value1 * value2;
+            case '/':
+                return value1 / value2;
+            default:
+                return 0;
+        }
+        /////
+        return eval(a + o + b);
     }
-
     console.log(countSheeps([]))
     console.log(countSheeps([undefined]))
     console.log(countSheeps([true, false]))
