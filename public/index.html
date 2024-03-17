@@ -41,11 +41,10 @@
 -->
 </body>
 <script>
-    const noSpace = (x) => x.split('').filter(char => char!== " " ).join('')
+   function findSmallestInt(arg) {
+       return (arg) => arg.reduce((x, y) => Math.min(x, y));
+    }
 
-    //Best
-    console.log(noSpace("rr sr"))
-
-
+   console.log(findSmallestInt([3,5,8]))
 </script>
 </html>
