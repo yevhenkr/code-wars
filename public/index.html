@@ -41,24 +41,10 @@
 -->
 </body>
 <script>
-    function basicOp(operation, value1, value2) {
-        switch (operation) {
-            case '+':
-                return value1 + value2;
-            case '-':
-                return value1 - value2;
-            case '*':
-                return value1 * value2;
-            case '/':
-                return value1 / value2;
-            default:
-                return 0;
-        }
-        /////
-        return eval(a + o + b);
+    const stringToNumber = function(str){
+        // put your code here
+        return Number(str);
     }
-    console.log(countSheeps([]))
-    console.log(countSheeps([undefined]))
-    console.log(countSheeps([true, false]))
+
 </script>
 </html>
