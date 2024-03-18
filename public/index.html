@@ -41,10 +41,11 @@
 -->
 </body>
 <script>
-    function century(year) {
-        let century = Math.ceil(year / 100);
-        return century;
+    function abbrevName(name){
+       return  name.split(' ').map(word => word[0]).join('.').toUpperCase()
     }
+
+    console.log(abbrevName("dsds frfr"))
 
 </script>
 </html>
