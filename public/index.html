@@ -44,8 +44,10 @@
     function abbrevName(name){
        return  name.split(' ').map(word => word[0]).join('.').toUpperCase()
     }
-
     console.log(abbrevName("dsds frfr"))
 
+
+    const digitize= (n)=> Array.from(String(n),Number).reverse()
+    console.log(digitize(35231))
 </script>
 </html>
