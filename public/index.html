@@ -62,6 +62,13 @@
     // Write a function "greet" that returns "hello world!"
     const greet = ()=> "hello world!"
 
-
+    function findNeedle(haystack) {
+        for (let i = 0; i < haystack.length; i++) {
+            if (haystack[i] === 'needle') {
+                return 'found the needle at position ' + i;
+            }
+        }
+    }
+    console.log(findNeedle(haystack_1));
 </script>
 </html>
