@@ -82,5 +82,19 @@
     }
 
     console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
+
+    function descendingOrder(n) {
+        var sortedDigits = n.toString().split('').sort(function(a, b) {
+            return b - a;
+        });
+        var sortedString = sortedDigits.join('');
+        var result = parseInt(sortedString);
+
+        return result;
+    }
+
+    console.log("qq",descendingOrder(15))
+
+
 </script>
 </html>
