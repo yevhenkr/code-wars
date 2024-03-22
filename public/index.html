@@ -76,5 +76,11 @@
     console.log("s",lovefunc(1,4))
     console.log("s",lovefunc(2,2))
 
+    function highAndLow(numbers){
+        var numbersArray = numbers.split(" ").map(Number);
+        return `${Math.max.apply(null, numbersArray)} ${Math.min.apply(null, numbersArray)}`
+    }
+
+    console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
 </script>
 </html>
