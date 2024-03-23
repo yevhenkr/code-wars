@@ -94,10 +94,12 @@
         //or
         return +(n + '').split('').sort(function(a,b){ return b - a }).join('');
     }
-
-
     console.log("qq",descendingOrder(15), "51")
 
+    function maps(x){
+        return x.map(i => i*=2)
+    }
+    console.log("qq",maps([3,4,5]))
 
 </script>
 </html>
