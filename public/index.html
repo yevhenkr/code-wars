@@ -91,10 +91,12 @@
         var result = parseInt(sortedString);
 
         return result;
+        //or
+        return +(n + '').split('').sort(function(a,b){ return b - a }).join('');
     }
 
 
-    console.log("qq",descendingOrder(15))
+    console.log("qq",descendingOrder(15), "51")
 
 
 </script>
