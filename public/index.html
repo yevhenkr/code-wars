@@ -116,6 +116,17 @@
 
     console.log(past(0,1,1))
 
+    // Sum Numbers
+    function sum(numbers) {
+        if (!numbers.length) return 0;
+        return numbers.reduce((accumulator, currentValue) => {
+            return accumulator + currentValue;
+        });
+        //Or
+        return numbers.reduce((a, b) => a + b, 0);
+    }
+
+    console.log(sum([]))
 
 </script>
 </html>
