@@ -147,7 +147,27 @@
     }
     console.log(getGrade(95,90,93))
 
+    function findAverage(array) {
+        if(array.length === 0){
+            return 0
+        }
+        return array.reduce((a, b) => a + b) / array.length
+    }
 
+    console.log(findAverage([]))
+
+    const rps = (p1, p2) => {
+if (p1 === p2){
+    return "Draw!"
+}
+if (p1 ==='rock' && p2 === 'scissors' || p1 ==='scissors' && p2 === 'paper' || p1 ==='paper' && p2 === 'rock' ){
+    return "Player 1 won!"
+}
+    return "Player 2 won!"
+    };
+    console.log(rps('rock', 'scissors'))
+    console.log(rps('scissors', 'paper'))
+    console.log(rps('paper', 'paper'))
 
 </script>
 </html>
