@@ -170,7 +170,7 @@ if (p1 ==='rock' && p2 === 'scissors' || p1 ==='scissors' && p2 === 'paper' || p
     console.log(rps('scissors', 'paper'))
     console.log(rps('paper', 'paper'))
 
-    const rps = (p1, p2) => {
+    const rp = (p1, p2) => {
         if (p1 === p2) return "Draw!";
         var rules = {rock: "scissors", paper: "rock", scissors: "paper"};
         if (p2 === rules[p1]) {
@@ -180,5 +180,21 @@ if (p1 ==='rock' && p2 === 'scissors' || p1 ==='scissors' && p2 === 'paper' || p
             return "Player 2 won!";
         }
     };
+
+    function countSmileys(arr) {
+        var r = 0
+        arr.map(c =>{
+            if (c[0] === ":" || c[0]===";") {
+                if (c[1] === ")" || c[1] === "D" || ((c[1] === "-" || c[1] === "~") && (c[2] === ")" || c[2] === "D" || c[2] === undefined))) {
+                    r+=1;
+                }
+            }
+        })
+        return r
+            // or const countSmileys = ss => ss.reduce((a, s) => a + /^[:;][-~]?[D)]$/.test(s), 0);
+    }
+
+    console.log(countSmileys([':D',':~)',';~D',':)']))
+
 </script>
 </html>
